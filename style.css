@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel{
+  height: 600px;
+}
+
+.carousel-inner{
+  height: 100%;
+}
+
+.item{
+  height: 100%;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+  height: 100%;
+}
+
+.carousel-caption{
+  width: 80%;
+  top: 30%;
+  left: 5%;
+  text-align: left;
+}
+
+.bg-heading{
+  font-size: 42px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  line-height: 55px;
+}
+
+button{
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  border-radius: 0;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 50px;
+}
+
+.top-bar{
+  position: fixed;
+  width: 100%;
+  top: 10%;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+.navigation-bar{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navigation-list{
+  display: flex;
+  align-items: center;
+  gap: 5.5rem;
+}
+
+.logo{
+  font-size: 25px;
+  color: #fff;
+}
+
+.logo:hover{
+  color: #fff;
+}
+
+
+.navigation-list a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all .3s ease-in-out;
+}
+
+.navigation-list a:hover{
+  color: grey;
+}
+
+.search, .menu{
+  cursor: pointer;
+}
+
+.right-list{
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+.active.top-bar{
+  opacity: 0;
+}
+
+
+@media only screen and (max-width:760px){
+  .bg-heading{
+    font-size: 25px;
+    letter-spacing: -2px;
+    
+  }
+
+  .carousel-caption{
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .navigation-list{
+    display: none;
+  }
+}
